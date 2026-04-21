@@ -1,0 +1,6 @@
+{
+  "html.validate.enabled": false,
+  "files.associations": {
+    "*.component.html": "html"
+  }
+}

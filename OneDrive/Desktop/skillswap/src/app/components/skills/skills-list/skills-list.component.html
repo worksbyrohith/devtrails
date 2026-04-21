@@ -1,0 +1,102 @@
+<section class="page catalog">
+  <div class="row between center wrap" style="margin-bottom: 32px; gap: 16px;">
+    <div>
+      <div class="tag-eyebrow" style="margin-bottom: 8px;">&mdash; Discover</div>
+      <h1 class="serif page-title">
+        Find your next <em>swap partner.</em>
+      </h1>
+    </div>
+    <div class="count">
+      <div class="tag-eyebrow" style="margin-bottom: 4px;">Showing</div>
+      <div class="count-big">
+        {{ result.total }} local matches
+        <span class="muted small">&middot; within {{ radius }}mi of {{ zipCode }}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filter bar -->
+  <div class="card filters">
+    <div>
+      <label class="field-label">Search skills or users</label>
+      <input class="field" [(ngModel)]="searchText" placeholder="&#128269; Try &quot;guitar&quot;, &quot;spanish&quot;, or &quot;Marcus&quot;..." />
+    </div>
+    <div>
+      <label class="field-label">Category</label>
+      <select class="field" [(ngModel)]="category" (change)="applyFilters()">
+        <option *ngFor="let item of categories" [value]="item">{{ item === 'All' ? 'All categories' : item }}</option>
+      </select>
+    </div>
+    <div>
+      <label class="field-label">Zip code</label>
+      <input class="field" [(ngModel)]="zipCode" />
+    </div>
+    <div>
+      <label class="field-label">Distance &middot; <span class="accent-text">{{ radius }}mi</span></label>
+      <input type="range" min="5" max="100" step="5" class="range" [(ngModel)]="radius" (change)="applyFilters()" />
+    </div>
+    <button class="btn btn-primary" (click)="applyFilters()">Apply filters</button>
+  </div>
+
+  <!-- Category pills -->
+  <div class="row gap-2 wrap" style="margin-bottom: 28px;">
+    <button type="button" class="chip" [class.ink]="category === cat" *ngFor="let cat of categories" (click)="setCategory(cat)">
+      {{ cat === 'All' ? 'All' : cat }}
+      <span *ngIf="category === cat"> &middot; {{ result.total }}</span>
+    </button>
+  </div>
+
+  <!-- Empty state -->
+  <div *ngIf="result.items.length === 0" class="card empty">
+    <div class="tag-eyebrow">&mdash; No matches</div>
+    <div class="serif" style="font-size: 28px; margin: 8px 0;">Nothing within {{ radius }}mi.</div>
+    <div class="muted">Try widening your radius or clearing the category filter.</div>
+  </div>
+
+  <!-- Results grid -->
+  <div class="results" *ngIf="result.items.length > 0">
+    <article class="result-card" *ngFor="let skill of result.items; let i = index">
+      <div class="card-banner" [style.background]="bannerGradient(i)">
+        <div class="avatar md" [class.vermillion]="avatarTheme(i)==='vermillion'" [class.forest]="avatarTheme(i)==='forest'" [class.plum]="avatarTheme(i)==='plum'" [class.gold]="avatarTheme(i)==='gold'">
+          {{ initials(skill.ownerName) }}
+        </div>
+        <div class="chip mi-chip">&#128205; {{ skill.distanceMiles }}mi</div>
+      </div>
+      <div class="card-body">
+        <div class="row between center" style="margin-bottom: 4px;">
+          <div class="result-name">{{ skill.ownerName }}</div>
+          <div class="stars">&#9733; {{ skill.ownerRating.toFixed(1) }}</div>
+        </div>
+        <div class="muted small" style="margin-bottom: 16px;">{{ skill.category }} &middot; {{ skill.transactionRate }}% completion</div>
+
+        <div class="tag-eyebrow" style="margin-bottom: 6px;">Offers</div>
+        <div class="row gap-2 wrap" style="margin-bottom: 12px;">
+          <div class="chip accent">{{ skill.title }}</div>
+        </div>
+
+        <div class="tag-eyebrow" style="margin-bottom: 6px;">Seeks</div>
+        <div class="row gap-2 wrap" style="margin-bottom: 18px;">
+          <div class="chip">Open swaps</div>
+        </div>
+
+        <a class="btn btn-outline" [routerLink]="['/skills', skill.id]" style="width:100%;">View profile</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Pagination -->
+  <div class="row between center pager" *ngIf="result.total > pageSize">
+    <div class="muted small">
+      Showing {{ (page - 1) * pageSize + 1 }}&ndash;{{ page * pageSize > result.total ? result.total : page * pageSize }} of {{ result.total }} matches
+    </div>
+    <div class="row gap-2 center">
+      <button class="btn btn-outline btn-sm" (click)="prev()" [disabled]="page === 1">&larr;</button>
+      <div class="row gap-1">
+        <button *ngFor="let p of pageNumbers" class="page-num" [class.active]="p === page" (click)="goto(p)">{{ p }}</button>
+        <div *ngIf="totalPages > 3" class="page-ellipsis">&hellip;</div>
+        <button *ngIf="totalPages > 3" class="page-num" [class.active]="totalPages === page" (click)="goto(totalPages)">{{ totalPages }}</button>
+      </div>
+      <button class="btn btn-outline btn-sm" (click)="next()" [disabled]="page >= totalPages">&rarr;</button>
+    </div>
+  </div>
+</section>

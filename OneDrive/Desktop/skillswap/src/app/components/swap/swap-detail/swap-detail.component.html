@@ -1,0 +1,9 @@
+<section *ngIf="swap" class="panel stack">
+	<h1>Swap #{{ swap.id }}</h1>
+	<p><strong>From:</strong> {{ swap.proposerName }}</p>
+	<p><strong>To:</strong> {{ swap.receiverName }}</p>
+	<p><strong>Skill Pair:</strong> {{ swap.offeredSkill }} ↔ {{ swap.requestedSkill }}</p>
+	<p><strong>Status:</strong> {{ swap.status }}</p>
+	<p>{{ swap.message }}</p>
+	<a class="ghost" routerLink="/swap/dashboard">Back</a>
+</section>

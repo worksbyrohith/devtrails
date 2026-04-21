@@ -1,0 +1,154 @@
+:host { display: block; background: var(--paper-2); min-height: 100vh; }
+
+.profile-detail { padding-bottom: 64px; background: var(--paper-2); }
+
+.crumb {
+  padding: 20px 80px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-2);
+}
+.crumb-link { color: var(--muted); text-decoration: none; }
+.crumb-active { color: var(--ink); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500; font-size: 13px; }
+
+.banner-strip {
+  background: linear-gradient(135deg, var(--paper-2) 0%, rgba(221, 203, 175, 0.4) 50%, var(--paper-3) 100%);
+  border-bottom: 1px solid var(--line);
+  height: 200px;
+}
+
+.detail-wrap {
+  padding: 0 80px;
+  margin-top: -80px;
+  position: relative;
+  z-index: 10;
+}
+.head-row { margin-bottom: 40px; gap: 16px; }
+.big-avatar {
+  width: 160px; height: 160px;
+  font-size: 48px;
+  border: 4px solid var(--paper);
+  background: var(--accent);
+  color: var(--paper);
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+.head-meta { padding-bottom: 12px; }
+.head-name {
+  font-size: 48px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  em { font-style: italic; }
+}
+.small { font-size: 13px; font-weight: 500; }
+.stars { color: var(--gold); }
+.stars .dim { color: var(--line-2); }
+.head-actions { padding-bottom: 12px; }
+
+.split {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+}
+
+.block {
+  padding: 40px;
+  margin-bottom: 24px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+.about {
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--ink-2);
+  margin-bottom: 24px;
+  em { color: var(--accent); font-style: italic; }
+}
+.stat-row {
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+.mb4 { margin-bottom: 6px; color: var(--muted); }
+.stat-val { font-weight: 600; font-size: 15px; color: var(--ink); }
+
+.skill-row {
+  padding: 16px 20px;
+  background: var(--paper-3);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  &:hover {
+    border-color: var(--accent);
+    background: var(--paper);
+  }
+}
+.skill-name { font-weight: 600; font-size: 16px; margin-bottom: 4px; color: var(--ink); }
+
+.review {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+.review.last { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
+.reviewer-name { font-weight: 600; font-size: 14px; margin-bottom: 2px;}
+.review-text { font-size: 15px; color: var(--ink-2); line-height: 1.6; }
+.sum { font-weight: 600; color: var(--ink); font-size: 15px; margin-left: 4px; }
+
+.side-block { 
+  padding: 32px; 
+  margin-bottom: 24px; 
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+.side-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  background: var(--paper-3);
+  color: var(--ink-2);
+  border: 1px solid transparent;
+  justify-content: flex-start;
+  transition: background 0.2s;
+  &:hover {
+    background: var(--paper);
+    border-color: var(--line);
+  }
+}
+
+.track-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.track-n { font-size: 32px; line-height: 1; margin-bottom: 6px; }
+.track-n.forest { color: var(--forest); }
+
+.cta-block {
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: var(--radius-md);
+  padding: 36px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+.cta-h { font-size: 24px; line-height: 1.3; margin-bottom: 16px;
+  em { color: var(--accent); font-style: italic; }
+}
+.cta-p { font-size: 14px; color: var(--muted-2); line-height: 1.6; margin-bottom: 24px; }
+
+@media (max-width: 960px) {
+  .crumb { padding: 20px 24px; }
+  .detail-wrap { padding: 0 24px; margin-top: -50px; }
+  .split { grid-template-columns: 1fr; }
+  .head-row { flex-direction: column; align-items: flex-start; }
+  .head-name { font-size: 36px; }
+  .big-avatar { width: 120px; height: 120px; font-size: 36px; }
+  .banner-strip { height: 140px; }
+}

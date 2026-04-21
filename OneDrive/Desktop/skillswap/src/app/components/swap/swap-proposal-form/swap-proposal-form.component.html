@@ -1,0 +1,146 @@
+<section class="page proposal" *ngIf="skill">
+  <div class="tag-eyebrow" style="margin-bottom: 12px;">
+    <a [routerLink]="['/skills', skill.id]" class="back-link">&larr; Back to {{ skill.ownerName.split(' ')[0] }}'s profile</a>
+  </div>
+  <h1 class="serif page-title">
+    Propose a swap with <em>{{ skill.ownerName.split(' ')[0] }}.</em>
+  </h1>
+
+  <div class="split">
+    <!-- Form -->
+    <div class="card form-card">
+
+      <!-- Step 1 -->
+      <div class="step-block">
+        <div class="row gap-3 center step-head">
+          <div class="step-num">1</div>
+          <div>
+            <div class="step-title">What you're offering</div>
+            <div class="muted small">Pick one of your registered skills</div>
+          </div>
+        </div>
+
+        <div class="grid2" *ngIf="offeredSkills.length > 0">
+          <div *ngFor="let s of offeredSkills"
+               class="pick-card"
+               [class.selected]="form.value.offeredSkill === s"
+               (click)="pickOffered(s)">
+            <div *ngIf="form.value.offeredSkill === s" class="check-dot">&#10003;</div>
+            <div class="tag-eyebrow" style="margin-bottom: 4px;">Your skill</div>
+            <div class="pick-name">{{ s }}</div>
+            <div class="muted small">Offered to the community</div>
+          </div>
+        </div>
+        <div *ngIf="offeredSkills.length === 0" class="banner">
+          You have no offered skills yet. Add one from your profile first.
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-block">
+        <div class="row gap-3 center step-head">
+          <div class="step-num">2</div>
+          <div>
+            <div class="step-title">What you want from {{ skill.ownerName.split(' ')[0] }}</div>
+            <div class="muted small">Choose from their offered skills</div>
+          </div>
+        </div>
+
+        <div class="stack gap-2">
+          <div *ngFor="let s of partnerSkills"
+               class="pick-row"
+               [class.selected]="form.value.requestedSkill === s"
+               (click)="pickRequested(s)">
+            <div>
+              <div class="pick-name sm">{{ s }}</div>
+              <div class="muted small" *ngIf="s === skill.title">{{ skill.description }}</div>
+              <div class="muted small" *ngIf="s !== skill.title">Listed on their profile</div>
+            </div>
+            <div class="radio-dot" [class.filled]="form.value.requestedSkill === s">
+              <span *ngIf="form.value.requestedSkill === s">&#10003;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-block last">
+        <div class="row gap-3 center step-head">
+          <div class="step-num">3</div>
+          <div>
+            <div class="step-title">Introductory &amp; logistics message</div>
+            <div class="muted small">Tell {{ skill.ownerName.split(' ')[0] }} about yourself, preferred times, location, and session format</div>
+          </div>
+        </div>
+
+        <div class="msg-wrap">
+          <textarea class="field" [formControl]="form.controls.message" placeholder="Hi! I'd love to swap skills with you. A little about me..."></textarea>
+          <div class="msg-count">
+            <span class="mono" [class.ok]="messageLength >= 250" [class.low]="messageLength < 250">
+              {{ messageLength >= 250 ? '✓' : '' }} {{ messageLength }} / 250 min
+            </span>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="tip-icon">&#128161;</div>
+          <div class="tip-text">
+            <strong>Pro tip:</strong> Messages that mention specific times, locations, and a reason why you chose this partner get accepted 3&times; more often.
+          </div>
+        </div>
+      </div>
+
+      <p *ngIf="error" class="error-text">{{ error }}</p>
+
+      <div class="row between center actions">
+        <a class="btn btn-ghost" [routerLink]="['/skills', skill.id]">Cancel</a>
+        <button class="btn btn-primary btn-lg" type="button" (click)="submit()" [disabled]="form.invalid">Send swap proposal &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Preview -->
+    <div class="preview-wrap">
+      <div class="card preview">
+        <div class="tag-eyebrow" style="margin-bottom: 16px;">&mdash; Swap preview</div>
+
+        <div class="preview-box">
+          <div class="row gap-3 center" style="margin-bottom: 16px;">
+            <div class="avatar md">{{ initials(currentUser?.fullName) }}</div>
+            <div>
+              <div class="preview-role">You</div>
+              <div class="tag-eyebrow">Offering</div>
+            </div>
+          </div>
+          <div class="chip accent preview-chip">
+            {{ form.value.offeredSkill || 'Select an offered skill' }}
+          </div>
+        </div>
+
+        <div class="preview-swap">&#8644;</div>
+
+        <div class="preview-box">
+          <div class="row gap-3 center" style="margin-bottom: 16px;">
+            <div class="avatar md vermillion">{{ initials(skill.ownerName) }}</div>
+            <div>
+              <div class="preview-role">{{ skill.ownerName }}</div>
+              <div class="tag-eyebrow">Will teach you</div>
+            </div>
+          </div>
+          <div class="chip accent preview-chip">
+            {{ form.value.requestedSkill || skill.title }}
+          </div>
+        </div>
+
+        <div class="next-block">
+          <div class="tag-eyebrow" style="margin-bottom: 12px;">&mdash; What happens next</div>
+          <div class="stack gap-3 next-list">
+            <div class="row gap-2"><span class="n">1.</span><span>{{ skill.ownerName.split(' ')[0] }} gets notified and reviews your profile</span></div>
+            <div class="row gap-2"><span class="n">2.</span><span>They accept, decline, or reply with questions</span></div>
+            <div class="row gap-2"><span class="n">3.</span><span>Once accepted, you schedule your session</span></div>
+            <div class="row gap-2"><span class="n">4.</span><span>Meet, swap skills, leave reviews</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
