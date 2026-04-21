@@ -1,0 +1,36 @@
+<nav class="nav">
+  <a class="logo" routerLink="/">
+    <div class="logo-mark">&#9638;</div>
+    <div class="logo-text">Skill<em>Swap</em></div>
+  </a>
+
+  <ng-container *ngIf="authService.currentUser$ | async as user; else guestLinks">
+    <div class="nav-links">
+      <a routerLink="/swap/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/skills" routerLinkActive="active">Discover</a>
+      <a routerLink="/swap/dashboard" routerLinkActive="active">My swaps</a>
+      <a routerLink="/profile" routerLinkActive="active">Profile</a>
+      <a *ngIf="user.role === 'Admin'" routerLink="/admin/dashboard" routerLinkActive="active">Admin</a>
+    </div>
+    <div class="nav-cta">
+      <a class="user-pill" routerLink="/profile">
+        <div class="avatar sm">{{ initials(user.fullName) }}</div>
+        <span>{{ user.fullName }}</span>
+      </a>
+      <button class="btn btn-ghost btn-sm" (click)="logout()">Log out</button>
+    </div>
+  </ng-container>
+
+  <ng-template #guestLinks>
+    <div class="nav-links">
+      <a routerLink="/">How it works</a>
+      <a routerLink="/skills">Browse skills</a>
+      <a routerLink="/">Community</a>
+      <a routerLink="/">About</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-sm" routerLink="/login">Log in</a>
+      <a class="btn btn-primary btn-sm" routerLink="/register">Sign up &mdash; it's free</a>
+    </div>
+  </ng-template>
+</nav>

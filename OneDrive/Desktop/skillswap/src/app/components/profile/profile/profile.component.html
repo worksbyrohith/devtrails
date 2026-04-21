@@ -1,0 +1,132 @@
+<section *ngIf="user" class="profile-page page page-fade-in">
+  <div class="row between wrap" style="margin-bottom: 40px; gap: 16px;">
+    <div>
+      <div class="tag-eyebrow" style="margin-bottom: 8px;">&mdash; {{ isOwnProfile ? 'Profile setup' : 'Member profile' }}</div>
+      <h1 class="serif page-title">
+        Complete your <em>presence.</em>
+      </h1>
+    </div>
+    <div style="text-align: right;">
+      <div class="tag-eyebrow" style="margin-bottom: 4px;">Profile strength</div>
+      <div class="serif strength">{{ profileStrength }}<span class="over">/100</span></div>
+    </div>
+  </div>
+
+  <div class="split">
+    <!-- Left: avatar card -->
+    <div class="card avatar-card slide-up-1">
+      <div class="tag-eyebrow" style="margin-bottom: 20px;">Profile picture</div>
+
+      <div class="avatar-wrap">
+        <div class="avatar xl big-avatar">{{ initials(user.fullName) }}</div>
+        <div class="camera">�</div>
+      </div>
+
+      <button class="btn btn-primary" type="button" style="width:100%; margin-bottom: 10px;">Upload image</button>
+      <button class="btn btn-ghost" type="button" style="width:100%; color: var(--accent);">Remove photo</button>
+
+      <div class="req">
+        <div class="tag-eyebrow" style="margin-bottom: 10px;">File requirements</div>
+        <ul>
+          <li>&bull; JPEG or PNG format</li>
+          <li>&bull; Maximum 5MB file size</li>
+          <li>&bull; Square crop recommended</li>
+          <li>&bull; Uploaded to Azure Blob Storage</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right: form -->
+    <div class="card form-card slide-up-2">
+      <div class="tag-eyebrow" style="margin-bottom: 20px;">Professional information</div>
+
+      <div class="grid2">
+        <div>
+          <label class="field-label">Display name</label>
+          <input class="field" [value]="user.fullName" [disabled]="!isOwnProfile" />
+        </div>
+        <div>
+          <label class="field-label">Email address <span class="muted">&middot; locked</span></label>
+          <input class="field locked" [value]="user.email" disabled />
+        </div>
+      </div>
+
+      <div class="grid-2-1" style="margin-top: 20px;">
+        <div>
+          <label class="field-label">Zip code</label>
+          <input class="field" [(ngModel)]="zipCode" />
+        </div>
+        <div>
+          <label class="field-label">Auto-detected location</label>
+          <div class="field loc-ok">� Brooklyn, NY &middot; verified</div>
+        </div>
+      </div>
+
+      <div class="bio-block">
+        <div class="row between center" style="margin-bottom: 8px;">
+          <label class="field-label" style="margin-bottom: 0;">Professional biography</label>
+          <span class="tag-eyebrow">{{ editableBio.length }} / 500</span>
+        </div>
+        <textarea class="field" [(ngModel)]="editableBio" [readonly]="!isOwnProfile" maxlength="500"></textarea>
+      </div>
+
+      <!-- Skills offered -->
+      <div class="skills-section">
+        <div class="row between center" style="margin-bottom: 12px;">
+          <label class="field-label" style="margin-bottom: 0;">Skills I offer</label>
+          <span class="tag-eyebrow">{{ user.skillsOffered.length }} active</span>
+        </div>
+        <div class="row gap-2 wrap" style="margin-bottom: 12px;">
+          <button *ngFor="let skill of user.skillsOffered" type="button" class="chip accent" (click)="isOwnProfile && removeOffered(skill)">
+            {{ skill }}<span *ngIf="isOwnProfile"> &times;</span>
+          </button>
+          <div *ngIf="user.skillsOffered.length === 0" class="muted small">None yet.</div>
+        </div>
+        <div *ngIf="isOwnProfile" class="row gap-2">
+          <input class="field" [(ngModel)]="offeredDraft" placeholder="Add a new skill" />
+          <button class="btn btn-outline" type="button" (click)="addOffered()">Add</button>
+        </div>
+      </div>
+
+      <!-- Skills desired -->
+      <div class="skills-section">
+        <div class="row between center" style="margin-bottom: 12px;">
+          <label class="field-label" style="margin-bottom: 0;">Skills I want to learn</label>
+          <span class="tag-eyebrow">{{ user.skillsDesired.length }} on wishlist</span>
+        </div>
+        <div class="row gap-2 wrap" style="margin-bottom: 12px;">
+          <button *ngFor="let skill of user.skillsDesired" type="button" class="chip" (click)="isOwnProfile && removeDesired(skill)">
+            {{ skill }}<span *ngIf="isOwnProfile"> &times;</span>
+          </button>
+          <div *ngIf="user.skillsDesired.length === 0" class="muted small">None yet.</div>
+        </div>
+        <div *ngIf="isOwnProfile" class="row gap-2">
+          <input class="field" [(ngModel)]="desiredDraft" placeholder="Add a new wishlist skill" />
+          <button class="btn btn-outline" type="button" (click)="addDesired()">Add</button>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="slider-block">
+        <div class="row between center" style="margin-bottom: 12px;">
+          <label class="field-label" style="margin-bottom: 0;">Maximum swap radius</label>
+          <span class="mono range-val">{{ radius }} miles</span>
+        </div>
+        <input type="range" class="range" min="5" max="50" [(ngModel)]="radius" />
+        <div class="row between" style="margin-top: 8px;">
+          <span class="tag-eyebrow">5 mi</span>
+          <span class="tag-eyebrow">50 mi</span>
+        </div>
+      </div>
+
+      <div class="row between center save-row">
+        <span class="muted small">Changes autosave via PATCH /api/users/me</span>
+        <div class="row gap-2">
+          <button class="btn btn-ghost" type="button">Cancel</button>
+          <button class="btn btn-primary" type="button" (click)="save()" [disabled]="!isOwnProfile">Save &amp; continue &rarr;</button>
+        </div>
+      </div>
+      <p *ngIf="message" class="forest-msg">{{ message }}</p>
+    </div>
+  </div>
+</section>

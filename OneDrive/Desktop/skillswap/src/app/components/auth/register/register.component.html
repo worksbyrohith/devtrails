@@ -1,0 +1,142 @@
+<section class="register-page">
+  <div class="wrap">
+    <div class="tag-eyebrow center-text">&mdash; Step {{ step }} of 3</div>
+    <h1 class="serif page-title">
+      <ng-container [ngSwitch]="step">
+        <span *ngSwitchCase="1">Create your <em>account.</em></span>
+        <span *ngSwitchCase="2">What can you <em>teach?</em></span>
+        <span *ngSwitchCase="3">What do you want to <em>learn?</em></span>
+      </ng-container>
+    </h1>
+    <p class="page-sub">
+      <ng-container [ngSwitch]="step">
+        <span *ngSwitchCase="1">Secure account first, then tell us about your skills.</span>
+        <span *ngSwitchCase="2">Share the skills you'd like to offer. You must list at least one to continue.</span>
+        <span *ngSwitchCase="3">List skills you're looking to pick up. At least one is required.</span>
+      </ng-container>
+    </p>
+
+    <!-- Stepper -->
+    <div class="stepper">
+      <div class="step-line">
+        <div class="step-line-fill" [style.width]="(step === 1 ? 0 : step === 2 ? 50 : 100) + '%'"></div>
+      </div>
+      <div class="step" [class.done]="step > 1" [class.active]="step === 1">
+        <div class="step-dot">{{ step > 1 ? '&#10003;' : '1' }}</div>
+        <div class="step-label">Account</div>
+      </div>
+      <div class="step" [class.done]="step > 2" [class.active]="step === 2">
+        <div class="step-dot">{{ step > 2 ? '&#10003;' : '2' }}</div>
+        <div class="step-label">Skills to offer</div>
+      </div>
+      <div class="step" [class.active]="step === 3">
+        <div class="step-dot">3</div>
+        <div class="step-label">Skills to learn</div>
+      </div>
+    </div>
+
+    <!-- Form card -->
+    <div class="form-card">
+      <div *ngIf="step !== 1" class="banner" style="margin-bottom: 32px;">
+        <strong>Required:</strong> You must register at least
+        <em>one skill to offer</em> and <em>one skill to learn</em>. Enforced at frontend &amp; backend.
+      </div>
+
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <!-- STEP 1 -->
+        <div *ngIf="step === 1">
+          <div class="grid2">
+            <div>
+              <label class="field-label">Full name</label>
+              <input class="field" formControlName="fullName" placeholder="Sarah Anderson" />
+            </div>
+            <div>
+              <label class="field-label">Email address</label>
+              <input class="field" type="email" formControlName="email" placeholder="sarah&#64;example.com" />
+            </div>
+          </div>
+          <div class="grid2" style="margin-top: 20px;">
+            <div>
+              <label class="field-label">Password</label>
+              <input class="field" type="password" formControlName="password" placeholder="At least 6 characters" />
+            </div>
+            <div>
+              <label class="field-label">Confirm password</label>
+              <input class="field" type="password" formControlName="confirmPassword" placeholder="Repeat password" />
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div *ngIf="step === 2">
+          <div class="grid2">
+            <div>
+              <label class="field-label">Skill name</label>
+              <input class="field" [(ngModel)]="offeredDraft" [ngModelOptions]="{ standalone: true }" placeholder="e.g. Web Development" />
+            </div>
+            <div>
+              <label class="field-label">Category</label>
+              <input class="field" placeholder="Technology, Music, Cooking..." />
+            </div>
+          </div>
+          <button class="btn btn-outline" type="button" style="width: 100%; margin-top: 20px;" (click)="addOfferedSkill()">+ Add this skill</button>
+
+          <div class="chips-block">
+            <div class="row between center" style="margin-bottom: 12px;">
+              <div class="tag-eyebrow">Skills registered &middot; {{ skillsOffered.length }}</div>
+              <div class="minmet" *ngIf="skillsOffered.length >= 1">&#10003; Minimum met</div>
+            </div>
+            <div class="row gap-2 wrap">
+              <button *ngFor="let skill of skillsOffered.controls; let i = index" type="button" class="chip accent removable" (click)="removeOffered(i)">
+                {{ skill.value }} &times;
+              </button>
+              <div *ngIf="skillsOffered.length === 0" class="muted small">No skills added yet.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div *ngIf="step === 3">
+          <div class="grid2">
+            <div>
+              <label class="field-label">Skill you want to learn</label>
+              <input class="field" [(ngModel)]="desiredDraft" [ngModelOptions]="{ standalone: true }" placeholder="e.g. Guitar lessons" />
+            </div>
+            <div>
+              <label class="field-label">Category</label>
+              <input class="field" placeholder="Music, Language..." />
+            </div>
+          </div>
+          <button class="btn btn-outline" type="button" style="width: 100%; margin-top: 20px;" (click)="addDesiredSkill()">+ Add to wishlist</button>
+
+          <div class="chips-block">
+            <div class="row between center" style="margin-bottom: 12px;">
+              <div class="tag-eyebrow">Skills on wishlist &middot; {{ skillsDesired.length }}</div>
+              <div class="minmet" *ngIf="skillsDesired.length >= 1">&#10003; Minimum met</div>
+            </div>
+            <div class="row gap-2 wrap">
+              <button *ngFor="let skill of skillsDesired.controls; let i = index" type="button" class="chip accent removable" (click)="removeDesired(i)">
+                {{ skill.value }} &times;
+              </button>
+              <div *ngIf="skillsDesired.length === 0" class="muted small">No skills added yet.</div>
+            </div>
+          </div>
+        </div>
+
+        <p *ngIf="error" class="error-text">{{ error }}</p>
+      </form>
+    </div>
+
+    <div class="row between actions">
+      <button type="button" class="btn btn-ghost" (click)="previousStep()" [disabled]="step === 1">&larr; Back</button>
+      <button *ngIf="step < 3" type="button" class="btn btn-primary btn-lg" (click)="nextStep()">Continue &rarr;</button>
+      <button *ngIf="step === 3" type="button" class="btn btn-primary btn-lg" (click)="submit()" [disabled]="loading">
+        {{ loading ? 'Creating&hellip;' : 'Complete registration &rarr;' }}
+      </button>
+    </div>
+
+    <p class="foot-note">
+      Already a member? <a routerLink="/login">Log in</a>
+    </p>
+  </div>
+</section>

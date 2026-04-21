@@ -1,0 +1,7 @@
+{
+  "doctype-first": false,
+  "attr-lowercase": false,
+  "tagname-lowercase": false,
+  "attr-value-double-quotes": false,
+  "spec-char-escape": false
+}

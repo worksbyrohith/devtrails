@@ -1,0 +1,166 @@
+<div class="page-fade-in">
+  
+
+  
+
+  <div style="padding: 48px 80px; background: var(--paper-2);">
+    <div class="row between center" style="margin-bottom: 40px;">
+      <div>
+        <div class="tag-eyebrow" style="margin-bottom: 8px;">— Your swap dashboard</div>
+        <h1 class="serif" style="font-size: 44px; line-height: 1.05; letter-spacing: -0.02em;">
+          Welcome back, <em style="color: var(--accent);">Sarah.</em>
+        </h1>
+      </div>
+      <a routerLink="/skills" class="btn btn-primary btn-lg">+ Start a new swap</a>
+    </div>
+
+    <!-- KPI row -->
+    <div class="slide-up-1" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px;">
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 24px;">
+        <div class="tag-eyebrow" style="margin-bottom: 10px;">Pending outbound</div>
+        <div class="serif" style="font-size: 40px; line-height: 1;">3</div>
+        <div style="font-size: 12px; color: var(--accent); margin-top: 6px;">+1 sent today</div>
+      </div>
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 24px; position: relative;">
+        <div style="position: absolute; top: 16px; right: 16px; width: 8px; height: 8px; background: var(--accent); border-radius: 50%;"></div>
+        <div class="tag-eyebrow" style="margin-bottom: 10px;">Pending inbound</div>
+        <div class="serif" style="font-size: 40px; line-height: 1; color: var(--accent);">2</div>
+        <div style="font-size: 12px; color: var(--muted); margin-top: 6px;">Action needed</div>
+      </div>
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 24px;">
+        <div class="tag-eyebrow" style="margin-bottom: 10px;">Active swaps</div>
+        <div class="serif" style="font-size: 40px; line-height: 1; color: var(--forest);">4</div>
+        <div style="font-size: 12px; color: var(--muted); margin-top: 6px;">2 sessions this week</div>
+      </div>
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 24px;">
+        <div class="tag-eyebrow" style="margin-bottom: 10px;">Completed</div>
+        <div class="serif" style="font-size: 40px; line-height: 1;">8</div>
+        <div style="font-size: 12px; color: var(--muted); margin-top: 6px;"><span class="stars">★</span> 4.9 avg · all-time</div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="slide-up-2" style="border-bottom: 1px solid var(--line); margin-bottom: 28px;">
+      <div class="row gap-6">
+        <div style="padding: 12px 4px; border-bottom: 2px solid var(--ink); font-weight: 600; font-size: 14px; color: var(--ink);">
+          Pending inbound <span style="background: var(--accent); color: white; border-radius: 999px; padding: 2px 8px; font-size: 11px; margin-left: 4px;">2</span>
+        </div>
+        <div style="padding: 12px 4px; font-size: 14px; color: var(--muted); cursor: pointer;">Pending outbound · 3</div>
+        <div style="padding: 12px 4px; font-size: 14px; color: var(--muted); cursor: pointer;">Active swaps · 4</div>
+        <div style="padding: 12px 4px; font-size: 14px; color: var(--muted); cursor: pointer;">Completed · 8</div>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="slide-up-3" style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); overflow: hidden;">
+      <!-- Table header -->
+      <div style="display: grid; grid-template-columns: 2fr 2fr 2fr 1fr 1.5fr; padding: 16px 24px; background: var(--paper-3); border-bottom: 1px solid var(--line);">
+        <div class="tag-eyebrow">From</div>
+        <div class="tag-eyebrow">Offering</div>
+        <div class="tag-eyebrow">Requesting</div>
+        <div class="tag-eyebrow">Sent</div>
+        <div class="tag-eyebrow" style="text-align: right;">Action</div>
+      </div>
+
+      <!-- Row 1 -->
+      <div style="display: grid; grid-template-columns: 2fr 2fr 2fr 1fr 1.5fr; padding: 20px 24px; border-bottom: 1px solid var(--line); align-items: center;">
+        <div class="row gap-3 center">
+          <div class="avatar md forest">EP</div>
+          <div>
+            <div style="font-weight: 600; font-size: 14px;">Elena Park</div>
+            <div class="muted" style="font-size: 12px;"><span class="stars" style="font-size: 11px;">★ 5.0</span> · 8 swaps · 1.8mi</div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 14px; font-weight: 500;">Korean language</div>
+          <div class="muted" style="font-size: 12px;">Expert</div>
+        </div>
+        <div>
+          <div style="font-size: 14px; font-weight: 500;">Graphic design</div>
+          <div class="muted" style="font-size: 12px;">Your skill · Expert</div>
+        </div>
+        <div class="muted" style="font-size: 12px;">2h ago</div>
+        <div class="row gap-2" style="justify-content: flex-end;">
+          <button class="btn btn-outline btn-sm">Decline</button>
+          <a routerLink="/swap/inbound/1" class="btn btn-primary btn-sm">Review →</a>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div style="display: grid; grid-template-columns: 2fr 2fr 2fr 1fr 1.5fr; padding: 20px 24px; border-bottom: 1px solid var(--line); align-items: center;">
+        <div class="row gap-3 center">
+          <div class="avatar md gold">AT</div>
+          <div>
+            <div style="font-weight: 600; font-size: 14px;">Aisha Thompson</div>
+            <div class="muted" style="font-size: 12px;"><span class="stars" style="font-size: 11px;">★ 4.8</span> · 9 swaps · 3.2mi</div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 14px; font-weight: 500;">Yoga instruction</div>
+          <div class="muted" style="font-size: 12px;">Advanced</div>
+        </div>
+        <div>
+          <div style="font-size: 14px; font-weight: 500;">Spanish tutoring</div>
+          <div class="muted" style="font-size: 12px;">Your skill · Intermediate</div>
+        </div>
+        <div class="muted" style="font-size: 12px;">1 day ago</div>
+        <div class="row gap-2" style="justify-content: flex-end;">
+          <button class="btn btn-outline btn-sm">Decline</button>
+          <a routerLink="/swap/inbound/1" class="btn btn-primary btn-sm">Review →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick view: Active swaps preview -->
+    <div style="margin-top: 48px;">
+      <div class="row between center" style="margin-bottom: 20px;">
+        <div class="tag-eyebrow">— Active swaps · quick view</div>
+        <a href="#" style="font-size: 12px; color: var(--ink); font-weight: 500;">See all 4 →</a>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;">
+        <div style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 24px;">
+          <div class="row between center" style="margin-bottom: 16px;">
+            <div class="chip forest">✓ Accepted · Scheduled</div>
+            <div class="muted" style="font-size: 12px;">Next session Fri 6pm</div>
+          </div>
+          <div class="row gap-3 center" style="margin-bottom: 16px;">
+            <div class="avatar md vermillion">MR</div>
+            <div>
+              <div style="font-weight: 600; font-size: 14px;">Marcus Rodriguez</div>
+              <div class="muted" style="font-size: 12px;">Guitar ⇄ Web dev · Session 2 of 4</div>
+            </div>
+          </div>
+          <div style="position: relative; height: 6px; background: var(--paper-3); border-radius: 3px; margin-bottom: 16px;">
+            <div style="width: 50%; height: 100%; background: var(--forest); border-radius: 3px;"></div>
+          </div>
+          <div class="row gap-2">
+            <button class="btn btn-outline btn-sm" style="flex: 1;">Message</button>
+            <a routerLink="/swap/1/review" class="btn btn-primary btn-sm" style="flex: 1;">Mark complete</a>
+          </div>
+        </div>
+
+        <div style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 24px;">
+          <div class="row between center" style="margin-bottom: 16px;">
+            <div class="chip forest">✓ Accepted · Scheduled</div>
+            <div class="muted" style="font-size: 12px;">Next session Sat 10am</div>
+          </div>
+          <div class="row gap-3 center" style="margin-bottom: 16px;">
+            <div class="avatar md plum">DO</div>
+            <div>
+              <div style="font-weight: 600; font-size: 14px;">David Okafor</div>
+              <div class="muted" style="font-size: 12px;">Plumbing ⇄ Photography · Session 1 of 3</div>
+            </div>
+          </div>
+          <div style="position: relative; height: 6px; background: var(--paper-3); border-radius: 3px; margin-bottom: 16px;">
+            <div style="width: 33%; height: 100%; background: var(--forest); border-radius: 3px;"></div>
+          </div>
+          <div class="row gap-2">
+            <button class="btn btn-outline btn-sm" style="flex: 1;">Message</button>
+            <button class="btn btn-primary btn-sm" style="flex: 1;">Mark complete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

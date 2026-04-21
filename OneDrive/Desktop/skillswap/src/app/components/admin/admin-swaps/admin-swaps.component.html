@@ -1,0 +1,26 @@
+<section class="stack">
+	<h1>Admin Swap Oversight</h1>
+	<div class="inline">
+		<label>
+			Status
+			<select [(ngModel)]="statusFilter">
+				<option value="All">All</option>
+				<option value="PendingOutbound">PendingOutbound</option>
+				<option value="PendingInbound">PendingInbound</option>
+				<option value="Active">Active</option>
+				<option value="Completed">Completed</option>
+			</select>
+		</label>
+	</div>
+
+	<article class="panel" *ngFor="let s of filteredSwaps">
+		<h3>#{{ s.id }} {{ s.offeredSkill }} ↔ {{ s.requestedSkill }}</h3>
+		<p class="muted">Current: {{ s.status }}</p>
+		<div class="inline">
+			<button class="ghost" (click)="setStatus(s.id, 'PendingOutbound')">Set PendingOutbound</button>
+			<button class="ghost" (click)="setStatus(s.id, 'PendingInbound')">Set PendingInbound</button>
+			<button class="ghost" (click)="setStatus(s.id, 'Active')">Set Active</button>
+			<button class="ghost" (click)="setStatus(s.id, 'Completed')">Set Completed</button>
+		</div>
+	</article>
+</section>

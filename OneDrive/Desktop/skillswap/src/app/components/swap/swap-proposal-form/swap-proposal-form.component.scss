@@ -1,0 +1,179 @@
+:host { display: block; }
+
+.page-title {
+  font-size: 48px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+  em { color: var(--accent); font-style: italic; }
+}
+.back-link { color: var(--muted); text-decoration: none; }
+
+.split {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+}
+
+.form-card { padding: 40px; }
+.step-block {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--line);
+}
+.step-block.last { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
+.step-head { margin-bottom: 20px; }
+.step-num {
+  width: 32px; height: 32px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.step-title { font-weight: 600; font-size: 16px; }
+.small { font-size: 13px; }
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.pick-card {
+  padding: 18px;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  position: relative;
+  transition: all .15s ease;
+  background: var(--card);
+}
+.pick-card:hover { border-color: var(--ink); }
+.pick-card.selected {
+  border: 1.5px solid var(--ink);
+  background: var(--paper-3);
+}
+.check-dot {
+  position: absolute;
+  top: 12px; right: 12px;
+  width: 18px; height: 18px;
+  background: var(--ink);
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: var(--paper);
+  font-size: 10px;
+}
+.pick-name { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+.pick-name.sm { font-size: 14px; margin-bottom: 2px; }
+
+.pick-row {
+  padding: 16px;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  transition: all .15s ease;
+  background: var(--card);
+}
+.pick-row:hover { border-color: var(--ink); }
+.pick-row.selected {
+  border: 1.5px solid var(--accent);
+  background: var(--accent-soft);
+  .pick-name { color: var(--accent-ink); }
+}
+.radio-dot {
+  width: 18px; height: 18px;
+  border: 1.5px solid var(--line-2);
+  border-radius: 999px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  color: #fff;
+}
+.radio-dot.filled {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.msg-wrap { position: relative; }
+.msg-wrap textarea { min-height: 180px; padding-bottom: 40px; }
+.msg-count {
+  position: absolute;
+  bottom: 12px; right: 14px;
+  font-size: 11px;
+}
+.msg-count .ok { color: var(--forest); }
+.msg-count .low { color: var(--accent); }
+
+.tip {
+  background: var(--paper-3);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.tip-text { font-size: 12px; color: var(--ink-2); line-height: 1.55; }
+
+.actions {
+  border-top: 1px solid var(--line);
+  padding-top: 28px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.preview-wrap { position: relative; }
+.preview {
+  padding: 24px;
+  position: sticky;
+  top: 100px;
+}
+.preview-box {
+  background: var(--paper-3);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  margin-bottom: 12px;
+}
+.preview-role { font-weight: 600; font-size: 13px; }
+.preview-chip {
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+}
+.preview-swap {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  width: 36px; height: 36px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 999px;
+  font-size: 16px;
+  margin: -6px auto 6px;
+}
+
+.next-block {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.next-list { font-size: 12px; color: var(--ink-2); line-height: 1.5; }
+.next-list .n { color: var(--accent); font-weight: 600; }
+
+@media (max-width: 960px) {
+  .split { grid-template-columns: 1fr; }
+  .form-card { padding: 24px; }
+  .page-title { font-size: 34px; }
+  .grid2 { grid-template-columns: 1fr; }
+  .preview { position: static; }
+}

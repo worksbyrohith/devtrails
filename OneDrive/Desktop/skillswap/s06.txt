@@ -1,0 +1,231 @@
+<section class="screen" id="s06">
+  <div class="screen-tag">
+    <span class="id">06</span>
+    <span class="title">User Profile</span>
+    <span class="uc">uc7 · detailed profile · bio & history</span>
+  </div>
+
+  <div class="nav">
+    <div class="logo">
+      <div class="logo-mark">⇄</div>
+      <div class="logo-text">Skill<em>Swap</em></div>
+    </div>
+    <div class="nav-links">
+      <a href="#s08">Dashboard</a>
+      <a href="#s05" class="active">Discover</a>
+      <a href="#s08">My swaps</a>
+      <a href="#s04">Profile</a>
+    </div>
+    <div class="nav-cta">
+      <div class="row gap-2 center" style="background: var(--paper-3); padding: 6px 14px 6px 6px; border-radius: 999px;">
+        <div class="avatar sm">SA</div>
+        <span style="font-size: 13px; font-weight: 500;">Sarah A.</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="background: var(--paper-2);">
+    <!-- Breadcrumb -->
+    <div style="padding: 20px 80px; border-bottom: 1px solid var(--line);">
+      <div class="tag-eyebrow">
+        <a href="#s05" style="color: var(--muted); text-decoration: none;">← Discover</a>
+        <span style="margin: 0 10px;">/</span>
+        <span style="color: var(--ink);">Marcus Rodriguez</span>
+      </div>
+    </div>
+
+    <!-- Profile banner -->
+    <div style="background: linear-gradient(135deg, var(--accent) 0%, var(--gold) 50%, var(--plum) 100%); height: 180px; position: relative;"></div>
+
+    <div style="padding: 0 80px; margin-top: -72px; position: relative;">
+      <div class="row between" style="align-items: end; margin-bottom: 40px;">
+        <div class="row gap-6" style="align-items: end;">
+          <div class="avatar xl vermillion" style="width: 144px; height: 144px; font-size: 40px; border: 6px solid var(--paper-2);">MR</div>
+          <div style="padding-bottom: 16px;">
+            <h1 class="serif" style="font-size: 44px; line-height: 1.05; margin-bottom: 6px; letter-spacing: -0.02em;">
+              Marcus <em>Rodriguez</em>
+            </h1>
+            <div class="row gap-4 center" style="margin-bottom: 8px;">
+              <span style="font-size: 14px; color: var(--muted);">📍 Manhattan, NY · 4.3mi from you</span>
+              <span class="stars" style="font-size: 14px;">★ 4.9 <span class="muted" style="color: var(--muted); font-size: 13px;">(14 reviews)</span></span>
+            </div>
+            <div class="row gap-2">
+              <div class="chip forest">✓ Identity verified</div>
+              <div class="chip gold">⚡ Top rated · 2025</div>
+              <div class="chip">Member since Mar 2024</div>
+            </div>
+          </div>
+        </div>
+        <div class="row gap-2" style="padding-bottom: 16px;">
+          <button class="btn btn-outline">♡ Save</button>
+          <a href="#s07" class="btn btn-accent btn-lg">⇄ Propose a swap</a>
+        </div>
+      </div>
+
+      <!-- 2-col body -->
+      <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 32px; padding-bottom: 64px;">
+        <!-- Left: main content -->
+        <div>
+          <!-- About -->
+          <div style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 32px; margin-bottom: 24px;">
+            <div class="tag-eyebrow" style="margin-bottom: 16px;">— About</div>
+            <p class="serif" style="font-size: 22px; line-height: 1.5; color: var(--ink-2); margin-bottom: 20px;">
+              "Musician of 15 years, part-time math teacher, full-time guitar obsessive. Happy to trade lessons for anything that stretches my mind — especially anything code-related. I play flamenco, jazz, and classical."
+            </p>
+            <div class="row gap-4" style="border-top: 1px solid var(--line); padding-top: 20px;">
+              <div>
+                <div class="tag-eyebrow" style="margin-bottom: 4px;">Response time</div>
+                <div style="font-weight: 500; font-size: 14px;">Within 2 hours</div>
+              </div>
+              <div>
+                <div class="tag-eyebrow" style="margin-bottom: 4px;">Preferred mode</div>
+                <div style="font-weight: 500; font-size: 14px;">In-person · Brooklyn cafés</div>
+              </div>
+              <div>
+                <div class="tag-eyebrow" style="margin-bottom: 4px;">Availability</div>
+                <div style="font-weight: 500; font-size: 14px;">Evenings & weekends</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills offered -->
+          <div style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 32px; margin-bottom: 24px;">
+            <div class="row between center" style="margin-bottom: 20px;">
+              <div class="tag-eyebrow">— Skills offered</div>
+              <div class="tag-eyebrow" style="color: var(--accent);">3 active</div>
+            </div>
+            <div class="stack gap-3">
+              <div class="row between center" style="padding: 16px; background: var(--paper-3); border-radius: var(--radius-sm);">
+                <div>
+                  <div style="font-weight: 600; font-size: 15px; margin-bottom: 2px;">Guitar lessons · Flamenco & Jazz</div>
+                  <div class="muted" style="font-size: 12px;">Expert · 15+ years · beginner to advanced students</div>
+                </div>
+                <div class="chip accent">Music & Arts</div>
+              </div>
+              <div class="row between center" style="padding: 16px; background: var(--paper-3); border-radius: var(--radius-sm);">
+                <div>
+                  <div style="font-weight: 600; font-size: 15px; margin-bottom: 2px;">Music theory</div>
+                  <div class="muted" style="font-size: 12px;">Advanced · adults only · harmony, composition, ear training</div>
+                </div>
+                <div class="chip accent">Music & Arts</div>
+              </div>
+              <div class="row between center" style="padding: 16px; background: var(--paper-3); border-radius: var(--radius-sm);">
+                <div>
+                  <div style="font-weight: 600; font-size: 15px; margin-bottom: 2px;">High school math tutoring</div>
+                  <div class="muted" style="font-size: 12px;">Expert · algebra through calculus · SAT/ACT prep</div>
+                </div>
+                <div class="chip accent">Tutoring</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviews -->
+          <div style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 32px;">
+            <div class="row between center" style="margin-bottom: 24px;">
+              <div class="tag-eyebrow">— Recent reviews · 14</div>
+              <span class="stars" style="font-size: 16px;">★★★★★ <span style="font-weight: 600; color: var(--ink); font-size: 14px; margin-left: 4px;">4.9</span></span>
+            </div>
+
+            <div style="border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 20px;">
+              <div class="row between" style="margin-bottom: 10px;">
+                <div class="row gap-3 center">
+                  <div class="avatar sm forest">LC</div>
+                  <div>
+                    <div style="font-weight: 600; font-size: 13px;">Lisa Chen</div>
+                    <div class="tag-eyebrow">2 weeks ago · guitar for python</div>
+                  </div>
+                </div>
+                <span class="stars" style="font-size: 12px;">★★★★★</span>
+              </div>
+              <p style="font-size: 14px; color: var(--ink-2); line-height: 1.55;">
+                Marcus is incredibly patient and genuinely talented. We met at a café in Dumbo for an hour of guitar basics — I walked away playing my first chord progression. Worth every minute of the Python session I gave him.
+              </p>
+            </div>
+
+            <div style="border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 20px;">
+              <div class="row between" style="margin-bottom: 10px;">
+                <div class="row gap-3 center">
+                  <div class="avatar sm plum">JK</div>
+                  <div>
+                    <div style="font-weight: 600; font-size: 13px;">James Kumar</div>
+                    <div class="tag-eyebrow">1 month ago · music theory for tax prep</div>
+                  </div>
+                </div>
+                <span class="stars" style="font-size: 12px;">★★★★★</span>
+              </div>
+              <p style="font-size: 14px; color: var(--ink-2); line-height: 1.55;">
+                Deep knowledge, clear explanations. Marcus made modal theory click for me in one session. He's the kind of teacher who makes you want to keep practicing after you leave.
+              </p>
+            </div>
+
+            <div>
+              <div class="row between" style="margin-bottom: 10px;">
+                <div class="row gap-3 center">
+                  <div class="avatar sm gold">AH</div>
+                  <div>
+                    <div style="font-weight: 600; font-size: 13px;">Amy Henderson</div>
+                    <div class="tag-eyebrow">2 months ago · guitar for copywriting</div>
+                  </div>
+                </div>
+                <span class="stars" style="font-size: 12px;">★★★★<span class="dim">★</span></span>
+              </div>
+              <p style="font-size: 14px; color: var(--ink-2); line-height: 1.55;">
+                Really thoughtful teacher. Session ran a bit long but that's because we were both enjoying it. Would swap again in a heartbeat.
+              </p>
+            </div>
+
+            <button class="btn btn-ghost" style="width: 100%; margin-top: 20px; color: var(--ink);">View all 14 reviews →</button>
+          </div>
+        </div>
+
+        <!-- Right: sidebar -->
+        <div>
+          <div style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px;">
+            <div class="tag-eyebrow" style="margin-bottom: 16px;">— Looking to learn</div>
+            <div class="stack gap-2">
+              <div class="chip" style="justify-content: flex-start; padding: 10px 14px;">💻 Web development</div>
+              <div class="chip" style="justify-content: flex-start; padding: 10px 14px;">⚛ React</div>
+              <div class="chip" style="justify-content: flex-start; padding: 10px 14px;">🐍 Python basics</div>
+              <div class="chip" style="justify-content: flex-start; padding: 10px 14px;">📷 Portrait photography</div>
+            </div>
+          </div>
+
+          <div style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px;">
+            <div class="tag-eyebrow" style="margin-bottom: 16px;">— Track record</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div>
+                <div class="serif" style="font-size: 28px; line-height: 1; margin-bottom: 4px;">12</div>
+                <div class="tag-eyebrow">Completed</div>
+              </div>
+              <div>
+                <div class="serif" style="font-size: 28px; line-height: 1; margin-bottom: 4px; color: var(--forest);">100%</div>
+                <div class="tag-eyebrow">Completion rate</div>
+              </div>
+              <div>
+                <div class="serif" style="font-size: 28px; line-height: 1; margin-bottom: 4px;">2h</div>
+                <div class="tag-eyebrow">Avg response</div>
+              </div>
+              <div>
+                <div class="serif" style="font-size: 28px; line-height: 1; margin-bottom: 4px;">14</div>
+                <div class="tag-eyebrow">5★ reviews</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="background: var(--ink); color: var(--paper); border-radius: var(--radius-md); padding: 28px;">
+            <div class="serif" style="font-size: 20px; line-height: 1.3; margin-bottom: 16px;">
+              Ready to <em style="color: var(--accent);">swap?</em>
+            </div>
+            <p style="font-size: 13px; color: var(--muted-2); line-height: 1.55; margin-bottom: 20px;">
+              Propose a trade and Marcus will review your profile, skills, and past ratings before accepting.
+            </p>
+            <a href="#s07" class="btn btn-accent" style="width: 100%;">Propose a swap →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================= 07 · SEND SWAP REQUEST ========================= -->

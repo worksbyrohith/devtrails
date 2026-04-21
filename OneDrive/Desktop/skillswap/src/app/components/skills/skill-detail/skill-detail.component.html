@@ -1,0 +1,182 @@
+<section *ngIf="skill; else missing" class="profile-detail">
+  <!-- Breadcrumb -->
+  <div class="crumb">
+    <div class="tag-eyebrow">
+      <a routerLink="/skills" class="crumb-link">&larr; Discover</a>
+      <span style="margin: 0 10px;">/</span>
+      <span class="crumb-active">{{ skill.ownerName }}</span>
+    </div>
+  </div>
+
+  <div class="banner-strip"></div>
+
+  <div class="detail-wrap slide-up-1">
+    <div class="row between wrap head-row" style="align-items: end;">
+      <div class="row gap-6 wrap" style="align-items: end;">
+        <div class="avatar xl big-avatar">{{ initials(skill.ownerName) }}</div>
+        <div class="head-meta">
+          <h1 class="serif head-name">
+            {{ skill.ownerName.split(' ')[0] }} <em>{{ skill.ownerName.split(' ').slice(1).join(' ') || '' }}</em>
+          </h1>
+          <div class="row gap-4 center wrap" style="margin-bottom: 8px;">
+            <span class="muted small">� {{ skill.distanceMiles }}mi from you</span>
+            <span class="stars">&#9733; {{ skill.ownerRating.toFixed(1) }} <span class="muted small">(14 reviews)</span></span>
+          </div>
+          <div class="row gap-2 wrap">
+            <div class="chip forest">? Identity verified</div>
+            <div class="chip gold">? Top rated &middot; 2026</div>
+            <div class="chip">Active member</div>
+          </div>
+        </div>
+      </div>
+      <div class="row gap-2 head-actions">
+        <button class="btn btn-outline" type="button">&#9733; Save</button>
+        <a class="btn btn-accent btn-lg" [routerLink]="['/swap/new', skill.id]">&#8644; Propose a swap</a>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="left-col">
+        <!-- About -->
+        <div class="card block slide-up-2">
+          <div class="tag-eyebrow" style="margin-bottom: 16px;">&mdash; About</div>
+          <p class="serif about">
+            &ldquo;{{ skill.ownerBio }}&rdquo;
+          </p>
+          <div class="row gap-4 wrap stat-row">
+            <div>
+              <div class="tag-eyebrow mb4">Response time</div>
+              <div class="stat-val">Within 2 hours</div>
+            </div>
+            <div>
+              <div class="tag-eyebrow mb4">Preferred mode</div>
+              <div class="stat-val">In-person &middot; cafés</div>
+            </div>
+            <div>
+              <div class="tag-eyebrow mb4">Availability</div>
+              <div class="stat-val">Evenings &amp; weekends</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="card block slide-up-3">
+          <div class="row between center" style="margin-bottom: 20px;">
+            <div class="tag-eyebrow">&mdash; Skills offered</div>
+            <div class="tag-eyebrow" style="color: var(--accent);">1 active</div>
+          </div>
+          <div class="stack gap-3">
+            <div class="row between center skill-row">
+              <div>
+                <div class="skill-name">{{ skill.title }}</div>
+                <div class="muted small">{{ skill.description }}</div>
+              </div>
+              <div class="chip accent">{{ skill.category }}</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="card block slide-up-4">
+          <div class="row between center" style="margin-bottom: 24px;">
+            <div class="tag-eyebrow">&mdash; Recent reviews</div>
+            <span class="stars" style="font-size: 16px;">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="sum">{{ skill.ownerRating.toFixed(1) }}</span></span>
+          </div>
+
+          <div class="review">
+            <div class="row between" style="margin-bottom: 10px;">
+              <div class="row gap-3 center">
+                <div class="avatar sm forest">LC</div>
+                <div>
+                  <div class="reviewer-name">Lisa Chen</div>
+                  <div class="tag-eyebrow">2 weeks ago</div>
+                </div>
+              </div>
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <p class="review-text">Incredibly patient and genuinely talented. Walked away buzzing with new ideas. Worth every minute of the session I gave back.</p>
+          </div>
+
+          <div class="review">
+            <div class="row between" style="margin-bottom: 10px;">
+              <div class="row gap-3 center">
+                <div class="avatar sm plum">JK</div>
+                <div>
+                  <div class="reviewer-name">James Kumar</div>
+                  <div class="tag-eyebrow">1 month ago</div>
+                </div>
+              </div>
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <p class="review-text">Deep knowledge, clear explanations. Made concepts click in a single session. The kind of teacher who makes you want to keep practicing after you leave.</p>
+          </div>
+
+          <div class="review last">
+            <div class="row between" style="margin-bottom: 10px;">
+              <div class="row gap-3 center">
+                <div class="avatar sm gold">AH</div>
+                <div>
+                  <div class="reviewer-name">Amy Henderson</div>
+                  <div class="tag-eyebrow">2 months ago</div>
+                </div>
+              </div>
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;<span class="dim">&#9733;</span></span>
+            </div>
+            <p class="review-text">Really thoughtful teacher. Session ran a bit long but that's because we were both enjoying it. Would swap again in a heartbeat.</p>
+          </div>
+
+          <button class="btn btn-ghost" type="button" style="width:100%; margin-top: 20px; color: var(--ink);">View all reviews &rarr;</button>
+        </div>
+      </div>
+
+      <div class="right-col">
+        <div class="card side-block">
+          <div class="tag-eyebrow" style="margin-bottom: 16px;">&mdash; Looking to learn</div>
+          <div class="stack gap-2">
+            <div class="side-chip">� Collaboration ideas</div>
+            <div class="side-chip">� New tech stacks</div>
+            <div class="side-chip">� Creative formats</div>
+          </div>
+        </div>
+
+        <div class="card side-block">
+          <div class="tag-eyebrow" style="margin-bottom: 16px;">&mdash; Track record</div>
+          <div class="track-grid">
+            <div>
+              <div class="serif track-n">12</div>
+              <div class="tag-eyebrow">Completed</div>
+            </div>
+            <div>
+              <div class="serif track-n forest">{{ skill.transactionRate }}%</div>
+              <div class="tag-eyebrow">Completion</div>
+            </div>
+            <div>
+              <div class="serif track-n">2h</div>
+              <div class="tag-eyebrow">Avg response</div>
+            </div>
+            <div>
+              <div class="serif track-n">14</div>
+              <div class="tag-eyebrow">5&#9733; reviews</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-block">
+          <div class="serif cta-h">Ready to <em>swap?</em></div>
+          <p class="cta-p">Propose a trade and {{ skill.ownerName.split(' ')[0] }} will review your profile, skills, and past ratings before accepting.</p>
+          <a class="btn btn-accent" [routerLink]="['/swap/new', skill.id]" style="width:100%;">Propose a swap &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ng-template #missing>
+  <section class="page">
+    <div class="card" style="padding: 48px; text-align: center;">
+      <div class="tag-eyebrow">&mdash; Not found</div>
+      <div class="serif" style="font-size: 32px; margin: 8px 0;">Skill not found.</div>
+      <a class="btn btn-primary" routerLink="/skills">Back to catalog</a>
+    </div>
+  </section>
+</ng-template>
