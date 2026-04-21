@@ -1,0 +1,844 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\dtos\\skill\\skillmetricsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\dtos\\skill\\skillmetricsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\dtos\\review\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\dtos\\review\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\dtos\\review\\createreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\dtos\\review\\createreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\dtos\\auth\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\dtos\\auth\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\migrations\\20260421075313_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\migrations\\20260421075313_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\entities\\swaprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\entities\\swaprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\skillswap.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\skillswap.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\controllers\\swapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\controllers\\swapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\services\\swapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\services\\swapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\services\\skillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\services\\skillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\services\\interfaces\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\services\\interfaces\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\services\\interfaces\\iswapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\services\\interfaces\\iswapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\services\\interfaces\\iskillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\services\\interfaces\\iskillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\repositories\\swaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\repositories\\swaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\repositories\\skillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\repositories\\skillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\repositories\\interfaces\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\repositories\\interfaces\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\repositories\\interfaces\\iswaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\repositories\\interfaces\\iswaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\repositories\\interfaces\\iskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\repositories\\interfaces\\iskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\dtos\\skilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\dtos\\skilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\dtos\\swap\\swapdashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\dtos\\swap\\swapdashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\dtos\\swap\\swaprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\dtos\\swap\\swaprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\dtos\\swap\\createswaprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\dtos\\swap\\createswaprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\dtos\\user\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\dtos\\user\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\dtos\\user\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\dtos\\user\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\dtos\\auth\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\dtos\\auth\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\enums\\swapstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\enums\\swapstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\entities\\userskillwanted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\entities\\userskillwanted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\entities\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\entities\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|d:\\yuva\\hcl\\hcl .net full stack\\dot net(c#)\\skillswap\\skillswap\\models\\entities\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D09E4E4-BF79-4B49-9AD4-345CCEC30AD4}|SkillSwap\\SkillSwap.csproj|solutionrelative:skillswap\\models\\entities\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JwtHelper.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Helpers\\JwtHelper.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Helpers\\JwtHelper.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Helpers\\JwtHelper.cs",
+              "RelativeToolTip": "SkillSwap\\Helpers\\JwtHelper.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:21:01.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Program.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Program.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Program.cs",
+              "RelativeToolTip": "SkillSwap\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:49:56.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SkillSwap\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:29:00.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Services\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "SkillSwap\\Services\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:17:45.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Services\\AuthService.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\AuthService.cs",
+              "RelativeToolTip": "SkillSwap\\Services\\AuthService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwE0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:21:46.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SkillMetricsDto.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Skill\\SkillMetricsDto.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\DTOs\\Skill\\SkillMetricsDto.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Skill\\SkillMetricsDto.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\DTOs\\Skill\\SkillMetricsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:09:26.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReviewDto.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Review\\ReviewDto.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\DTOs\\Review\\ReviewDto.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Review\\ReviewDto.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\DTOs\\Review\\ReviewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:07:30.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateReviewDto.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Review\\CreateReviewDto.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\DTOs\\Review\\CreateReviewDto.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Review\\CreateReviewDto.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\DTOs\\Review\\CreateReviewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:07:01.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthResponseDto.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Auth\\AuthResponseDto.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\DTOs\\Auth\\AuthResponseDto.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Auth\\AuthResponseDto.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\DTOs\\Auth\\AuthResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:59:32.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\appsettings.json",
+              "RelativeDocumentMoniker": "SkillSwap\\appsettings.json",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\appsettings.json",
+              "RelativeToolTip": "SkillSwap\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T06:49:17.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20260421075313_InitialCreate.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Migrations\\20260421075313_InitialCreate.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Migrations\\20260421075313_InitialCreate.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Migrations\\20260421075313_InitialCreate.cs",
+              "RelativeToolTip": "SkillSwap\\Migrations\\20260421075313_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:53:14.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "SkillSwap\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:48:45.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SwapRequest.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Entities\\SwapRequest.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\Entities\\SwapRequest.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Entities\\SwapRequest.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\Entities\\SwapRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:47:21.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SkillSwap",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\SkillSwap.csproj",
+              "RelativeDocumentMoniker": "SkillSwap\\SkillSwap.csproj",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\SkillSwap.csproj",
+              "RelativeToolTip": "SkillSwap\\SkillSwap.csproj",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-21T06:37:52.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Controllers\\ReviewsController.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "SkillSwap\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:31:46.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SwapService.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\SwapService.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Services\\SwapService.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\SwapService.cs",
+              "RelativeToolTip": "SkillSwap\\Services\\SwapService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:24:11.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SwapsController.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Controllers\\SwapsController.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Controllers\\SwapsController.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Controllers\\SwapsController.cs",
+              "RelativeToolTip": "SkillSwap\\Controllers\\SwapsController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAswA0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:30:49.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SkillsController.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Controllers\\SkillsController.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Controllers\\SkillsController.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Controllers\\SkillsController.cs",
+              "RelativeToolTip": "SkillSwap\\Controllers\\SkillsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:30:14.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Controllers\\UserController.cs",
+              "RelativeToolTip": "SkillSwap\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:29:39.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ReviewService.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\ReviewService.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Services\\ReviewService.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\ReviewService.cs",
+              "RelativeToolTip": "SkillSwap\\Services\\ReviewService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:28:05.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SkillService.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\SkillService.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Services\\SkillService.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\SkillService.cs",
+              "RelativeToolTip": "SkillSwap\\Services\\SkillService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:23:25.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Services\\UserService.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\UserService.cs",
+              "RelativeToolTip": "SkillSwap\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:22:33.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IReviewService.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\Interfaces\\IReviewService.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Services\\Interfaces\\IReviewService.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\Interfaces\\IReviewService.cs",
+              "RelativeToolTip": "SkillSwap\\Services\\Interfaces\\IReviewService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:20:20.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ISwapService.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\Interfaces\\ISwapService.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Services\\Interfaces\\ISwapService.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\Interfaces\\ISwapService.cs",
+              "RelativeToolTip": "SkillSwap\\Services\\Interfaces\\ISwapService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:19:42.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ISkillService.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\Interfaces\\ISkillService.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Services\\Interfaces\\ISkillService.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\Interfaces\\ISkillService.cs",
+              "RelativeToolTip": "SkillSwap\\Services\\Interfaces\\ISkillService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:19:03.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "SkillSwap\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:18:27.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ReviewRepository.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\ReviewRepository.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Repositories\\ReviewRepository.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\ReviewRepository.cs",
+              "RelativeToolTip": "SkillSwap\\Repositories\\ReviewRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:16:21.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SwapRepository.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\SwapRepository.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Repositories\\SwapRepository.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\SwapRepository.cs",
+              "RelativeToolTip": "SkillSwap\\Repositories\\SwapRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:15:31.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SkillRepository.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\SkillRepository.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Repositories\\SkillRepository.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\SkillRepository.cs",
+              "RelativeToolTip": "SkillSwap\\Repositories\\SkillRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:14:44.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "SkillSwap\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:13:58.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IReviewRepository.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\Interfaces\\IReviewRepository.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Repositories\\Interfaces\\IReviewRepository.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\Interfaces\\IReviewRepository.cs",
+              "RelativeToolTip": "SkillSwap\\Repositories\\Interfaces\\IReviewRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:13:12.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ISwapRepository.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\Interfaces\\ISwapRepository.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Repositories\\Interfaces\\ISwapRepository.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\Interfaces\\ISwapRepository.cs",
+              "RelativeToolTip": "SkillSwap\\Repositories\\Interfaces\\ISwapRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:12:25.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ISkillRepository.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\Interfaces\\ISkillRepository.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Repositories\\Interfaces\\ISkillRepository.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\Interfaces\\ISkillRepository.cs",
+              "RelativeToolTip": "SkillSwap\\Repositories\\Interfaces\\ISkillRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:11:36.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "SkillSwap\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:10:58.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SkillDto.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\SkillDto.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\DTOs\\SkillDto.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\SkillDto.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\DTOs\\SkillDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:01:07.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SwapDashboardDto.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Swap\\SwapDashboardDto.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\DTOs\\Swap\\SwapDashboardDto.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Swap\\SwapDashboardDto.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\DTOs\\Swap\\SwapDashboardDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:04:38.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SwapRequestDto.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Swap\\SwapRequestDto.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\DTOs\\Swap\\SwapRequestDto.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Swap\\SwapRequestDto.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\DTOs\\Swap\\SwapRequestDto.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:03:26.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CreateSwapRequestDto.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Swap\\CreateSwapRequestDto.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\DTOs\\Swap\\CreateSwapRequestDto.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Swap\\CreateSwapRequestDto.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\DTOs\\Swap\\CreateSwapRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:01:51.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "UpdateProfileDto.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\User\\UpdateProfileDto.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\DTOs\\User\\UpdateProfileDto.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\User\\UpdateProfileDto.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\DTOs\\User\\UpdateProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:00:42.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserProfileDto.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\User\\UserProfileDto.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\DTOs\\User\\UserProfileDto.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\User\\UserProfileDto.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\DTOs\\User\\UserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:00:06.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Auth\\LoginDto.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\DTOs\\Auth\\LoginDto.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Auth\\LoginDto.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\DTOs\\Auth\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:59:06.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Auth\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\DTOs\\Auth\\RegisterDto.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\DTOs\\Auth\\RegisterDto.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\DTOs\\Auth\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:58:16.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UserSkillWanted.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Entities\\UserSkillWanted.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\Entities\\UserSkillWanted.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Entities\\UserSkillWanted.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\Entities\\UserSkillWanted.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:46:53.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "SwapStatus.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Enums\\SwapStatus.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\Enums\\SwapStatus.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Enums\\SwapStatus.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\Enums\\SwapStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:43:27.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "UserSkill.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Entities\\UserSkill.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\Entities\\UserSkill.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Entities\\UserSkill.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\Entities\\UserSkill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:46:25.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\Entities\\User.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Entities\\User.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:45:04.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Review.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Entities\\Review.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\Entities\\Review.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Entities\\Review.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\Entities\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:47:59.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Skill.cs",
+              "DocumentMoniker": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Entities\\Skill.cs",
+              "RelativeDocumentMoniker": "SkillSwap\\Models\\Entities\\Skill.cs",
+              "ToolTip": "D:\\YUVA\\HCL\\HCL .NET FULL STACK\\dot net(C#)\\SkillSwap\\SkillSwap\\Models\\Entities\\Skill.cs",
+              "RelativeToolTip": "SkillSwap\\Models\\Entities\\Skill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:55:53.37Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
